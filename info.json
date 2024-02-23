@@ -1,30 +1,36 @@
 {
-  "keyboard_name": "2by2",
-    "manufacturer": "Elias Sj\u00f6green",
-    "url": "https://github.com/eliassjogreen/2by2",
-    "maintainer": "eliassjogreen",
+    "manufacturer": "James Blackley",
+    "keyboard_name": "jimmy2b2",
+    "maintainer": "JimmyBlackley",
     "bootloader": "rp2040",
-    "diode_direction": "ROW2COL",
+    "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
         "nkro": true
     },
     "matrix_pins": {
-        "cols": ["GP2", "GP3"],
-        "rows": ["GP5", "GP8"]
+        "cols": ["GP0", "GP1"],
+        "rows": ["GP2", "GP3"]
     },
-    "layout_aliases": {
-        "LAYOUT": "LAYOUT_horizontal"
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
     },
     "layouts": {
-        "LAYOUT_horizontal": {
+        "LAYOUT_ortho_2x2": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
                 {"matrix": [0, 1], "x": 1, "y": 0},
-
                 {"matrix": [1, 0], "x": 0, "y": 1},
                 {"matrix": [1, 1], "x": 1, "y": 1}
-              ]
+            ]
         }
     }
 }
